@@ -29,6 +29,7 @@ function App() {
       setImageLabels(response.data.labels);
     } catch (error) {
       console.error('Error analyzing image:', error);
+      alert('Error analyzing image: ' + error.message);
     } finally {
       setIsLoading(false);
     }
